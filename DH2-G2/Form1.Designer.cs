@@ -39,7 +39,7 @@
             this.lbDescripcion = new System.Windows.Forms.Label();
             this.lbDato1 = new System.Windows.Forms.Label();
             this.txtDato2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbDato2 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,7 @@
             this.rbtnTemperatura.TabStop = true;
             this.rbtnTemperatura.Text = "Temperatura";
             this.rbtnTemperatura.UseVisualStyleBackColor = true;
+            this.rbtnTemperatura.CheckedChanged += new System.EventHandler(this.rbtnTemperatura_CheckedChanged);
             // 
             // rbtnLongitud
             // 
@@ -75,6 +76,7 @@
             this.rbtnLongitud.TabStop = true;
             this.rbtnLongitud.Text = "Longitud";
             this.rbtnLongitud.UseVisualStyleBackColor = true;
+            this.rbtnLongitud.CheckedChanged += new System.EventHandler(this.rbtnLongitud_CheckedChanged);
             // 
             // rbtnMasa
             // 
@@ -86,6 +88,7 @@
             this.rbtnMasa.TabStop = true;
             this.rbtnMasa.Text = "Masa";
             this.rbtnMasa.UseVisualStyleBackColor = true;
+            this.rbtnMasa.CheckedChanged += new System.EventHandler(this.rbtnMasa_CheckedChanged);
             // 
             // txtDato1
             // 
@@ -106,7 +109,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.lbDato2);
             this.groupBox2.Controls.Add(this.txtDato2);
             this.groupBox2.Controls.Add(this.lbDato1);
             this.groupBox2.Controls.Add(this.lbDescripcion);
@@ -127,6 +130,7 @@
             this.btnConvertir.TabIndex = 5;
             this.btnConvertir.Text = "Convertir";
             this.btnConvertir.UseVisualStyleBackColor = true;
+            this.btnConvertir.Click += new System.EventHandler(this.btnConvertir_Click);
             // 
             // lbDescripcion
             // 
@@ -140,9 +144,10 @@
             // lbDato1
             // 
             this.lbDato1.AutoSize = true;
-            this.lbDato1.Location = new System.Drawing.Point(155, 47);
+            this.lbDato1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDato1.Location = new System.Drawing.Point(154, 46);
             this.lbDato1.Name = "lbDato1";
-            this.lbDato1.Size = new System.Drawing.Size(44, 13);
+            this.lbDato1.Size = new System.Drawing.Size(51, 13);
             this.lbDato1.TabIndex = 7;
             this.lbDato1.Text = "lbDato1";
             // 
@@ -153,14 +158,15 @@
             this.txtDato2.Size = new System.Drawing.Size(100, 20);
             this.txtDato2.TabIndex = 8;
             // 
-            // label2
+            // lbDato2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(409, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "label1";
+            this.lbDato2.AutoSize = true;
+            this.lbDato2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDato2.Location = new System.Drawing.Point(391, 51);
+            this.lbDato2.Name = "lbDato2";
+            this.lbDato2.Size = new System.Drawing.Size(41, 13);
+            this.lbDato2.TabIndex = 9;
+            this.lbDato2.Text = "label1";
             // 
             // Calculo
             // 
@@ -195,7 +201,7 @@
         private System.Windows.Forms.Label lbDato1;
         private System.Windows.Forms.Label lbDescripcion;
         private System.Windows.Forms.Button btnConvertir;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDato2;
     }
 }
 
