@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace DH2_G2
 {
-    public partial class Form1 : Form
+    public partial class Calculo : Form
     {
-        public Form1()
+        public Calculo()
         {
             InitializeComponent();
+        }
+
+        private void Calculos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
